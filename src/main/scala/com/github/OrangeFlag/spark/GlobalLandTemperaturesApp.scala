@@ -12,8 +12,8 @@ object GlobalLandTemperaturesApp extends App {
 
   private val SQL_CONNECTION_URL = "jdbc:mysql://localhost:3306/dbname"
   private val SQL_CONNECTION_PROPERTIES = new Properties()
-  SQL_CONNECTION_PROPERTIES.put("user","username")
-  SQL_CONNECTION_PROPERTIES.put("password","yourpassword")
+  SQL_CONNECTION_PROPERTIES.put("user", "username")
+  SQL_CONNECTION_PROPERTIES.put("password", "yourpassword")
 
   GlobalLandTemperatures.calcAndSave(sparkSession, getClass.getResource("/GlobalLandTemperaturesByMajorCity.csv").toURI.toString, SQL_CONNECTION_URL, SQL_CONNECTION_PROPERTIES)
 }

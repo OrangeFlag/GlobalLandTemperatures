@@ -22,7 +22,6 @@ lazy val root = (project in file(".")).
 
     coverageHighlighting := true,
 
-
     libraryDependencies ++= Seq(
       "org.apache.spark" %% "spark-sql" % "2.4.4",
       "org.apache.spark" %% "spark-streaming" % "2.4.4",
